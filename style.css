@@ -7,44 +7,60 @@
 
 
 body {
-    background-color: hsl(212, 23%, 69%);
+    background-color: hsl(210, 46%, 95%);
     font-family: 'Manrope', sans-serif;
     color: hsl(214, 17%, 51%);
+    line-height: 1.4;
 }
 h1 {
-    font-size: 1.325rem;
+    font-size: 1rem;
+    
     font-weight: 700;
     color: hsl(217, 19%, 35%);
 }
 h2 {
-    font-size: 1rem;
+    font-size: .9rem;
     color: hsl(217, 19%, 35%);
 }
 
 p {
     font-weight: 500;
+    margin-top:20px ;
+    font-size: .85rem;
+    padding: 0 3px;
 }
 
 
 .container {
-    background-color: hsl(210, 46%, 95%);
+    background-color: white;
     border-radius: 10px;
     width: 90%;
-    max-width: 600px;
+    max-width: 400px;
     margin: 100px auto 25px;
-    padding: 0 0 350px;
+    padding: 0 0 5px;
 }
 
 
-.seccion1 {
-    background-image: url('images/drawers.jpg');
-    
+.seccion1 img {
+    max-height: 400px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px 10px 0 0;
 }
 
 .seccion2 {
-    
+    padding: 35px;
 }
 
+.perfil {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.perfil p {
+    margin: 10px 35px 0 0;
+}
 
 .attribution {
     text-align: center;
@@ -55,7 +71,28 @@ a{
     color: black;
 }
 
-img {
-    border-radius: 50%;
-    width: 4rem;
+.perfil {
+    margin-top: 35px;
 }
+
+.perfil img:nth-child(1) {
+    border-radius: 50%;
+    width: 3.25rem;
+}
+
+.share {
+    height: 25px;
+    margin-top: 15px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
