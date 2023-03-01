@@ -34,17 +34,16 @@ p {
 .container {
     background-color: white;
     border-radius: 10px;
-    width: 90%;
     max-width: 400px;
+    width: 90%;    
     margin: 100px auto 25px;
-    padding: 0 0 5px;
 }
 
 
 .seccion1 img {
-    max-height: 400px;
+    
     width: 100%;
-    max-width: 400px;
+    height: 100%;
     border-radius: 10px 10px 0 0;
 }
 
@@ -95,4 +94,25 @@ a{
 
 
 
+@media (min-width:1000px) {
+
+    .container{
+        margin-top: 250px;
+        display: flex;
+        max-width: 750px;
+
+    }
+    .seccion1 {
+        flex: 0 0 320px;
+    }
+
+
+    h1 {
+        font-size: 1.25rem  ;
+    }
+    .perfil p {
+        margin-right: 7.8125rem;
+    }
+}
+    
 
