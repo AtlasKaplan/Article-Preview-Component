@@ -48,7 +48,7 @@ p {
 }
 
 .seccion2 {
-    padding: 35px;
+    padding: 35px 35px 15px 35px;
 }
 
 .perfil {
@@ -82,13 +82,47 @@ a{
 .share {
     height: 25px;
     margin-top: 15px;
-    background-color: hsl(210, 46%, 95%);
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer; 
+    transition: 300ms;
+    z-index: 2;
 }
 
 
+ 
 
+.iconos {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(212, 23%, 69%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 0 0 15px 15px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    bottom: 105px;
+    z-index: -1;
+}
+
+.iconos img {
+    width: 22px;
+    height: 22px;
+    
+}
+
+.iconos img:nth-child(4){
+    margin-right: 50px;
+}
+
+.iconos p {
+    margin-top: 0;
+    font-size: 0.9rem;
+
+}
 
 
 
@@ -106,6 +140,9 @@ a{
         flex: 0 0 320px;
     }
 
+    .seccion1 img {
+        border-radius: 10px 0 0 10px;
+    }
 
     h1 {
         font-size: 1.25rem  ;
