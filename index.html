@@ -31,7 +31,7 @@
         <img src="images/avatar-michelle.jpg" alt="avatar">
         <p><b>Michelle Appleton </b><br> 28 Jun 2020</p> 
                 
-        <img onclick="styleChange()" class="share" src="images/icon-share.svg" alt="share">
+        <img class="share" src="images/icon-share.svg" alt="share">
       </div>
            
     </div>
@@ -55,25 +55,16 @@
 </body>
 
 <script>
+  const toggle = document.querySelector(".share");
+  const icons = document.querySelector(".iconos");
+  const share = document.querySelector(".share")
+  toggle.addEventListener('click', function () {
 
-  function styleChange() {
-
-    document.getElementsByClassName("iconos")[0].style.zIndex = "1";
-    document.getElementsByClassName("share")[0].style.transform = "rotate(180deg)";
-
-  }
-
-  function styleChangeBack() {
-
-      document.getElementsByClassName("iconos")[0].style.zIndex = "-1";
-      document.getElementsByClassName("share")[0].style.transform = "rotate(-180deg)";
-
-    }
+    icons.classList.toggle("active");
+    share.classList.toggle("active")
 
 
-
-
-
+  })
 
 </script>
 </html>

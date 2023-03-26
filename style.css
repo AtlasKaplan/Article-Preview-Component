@@ -87,7 +87,9 @@ a{
     transition: 300ms;
     z-index: 2;
 }
-
+.share.active{
+    transform: rotate(180deg);
+}
 
  
 
@@ -105,12 +107,17 @@ a{
     max-width: 400px;
     position: relative;
     bottom: 105px;
-    z-index: -1;
+    z-index: -1;  
+}
+
+.iconos.active {
+    z-index: 1;
 }
 
 .iconos img {
     width: 22px;
     height: 22px;
+    cursor: pointer;
     
 }
 
@@ -121,6 +128,7 @@ a{
 .iconos p {
     margin-top: 0;
     font-size: 0.9rem;
+    cursor: pointer;
 
 }
 
@@ -134,10 +142,12 @@ a{
         margin-top: 250px;
         display: flex;
         max-width: 750px;
+       
 
     }
     .seccion1 {
         flex: 0 0 320px;
+        
     }
 
     .seccion1 img {
@@ -150,6 +160,35 @@ a{
     .perfil p {
         margin-right: 7.8125rem;
     }
+
+    .iconos {
+        background-color: hsl(217, 19%, 35%);
+        color: hsl(212, 23%, 69%);
+        display: none;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: center;
+        height: 60px;
+        margin: 0 auto;
+        border-radius: 15px;
+        width: 300px;
+        position: relative;
+        bottom: 150px;
+        left: 325px;
+        
+        
+    }
+    .iconos.active {
+        display: flex;
+        margin-bottom: -60px;
+    }
+
+.iconos img:nth-child(4) {
+    margin: 0;
+}
+
+.share.active {
+    transform: rotate(270deg);
 }
     
-
+}
